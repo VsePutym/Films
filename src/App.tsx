@@ -1,12 +1,16 @@
 import React from 'react';
+import Input from './features/Input'
+import ListFilms from './features/ListFilms'
+import './App.css';
 
 
 function App() {
   return (
     <div className="App">
-   <h1>Мой новый проект</h1>
-      <p>Мой новый проект разработка Библиотеки фильмов на React RTK TS</p>
-      <p>Trakt.tv гланый API</p>
+   <h1>MovieMatch</h1>
+      <p>OMDb гланый API</p>
+      <Input />
+      <ListFilms />
     </div>
   );
 }
