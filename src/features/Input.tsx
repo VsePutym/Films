@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useAppDispatch } from '../hooks/hooks'
 import { getSeriesFilms } from '../stores/actions'
+import styles from '../styles/styles.module.scss'
 
 const Input: React.FC = () => {
 	const [Title, setText] = useState<string>('');
@@ -12,8 +13,8 @@ const Input: React.FC = () => {
 
 	return (
 		<div>
-			<input value={Title} onChange={(e) => setText(e.target.value)} type="text" />
-			<button onClick={handleClick}>Поиск</button>
+			<input placeholder='Star Wars...' value={Title} onChange={(e) => setText(e.target.value)} type="text" />
+			<button className={styles.buttonInput} onClick={handleClick}>Поиск</button>
 		</div>
 	)
 }

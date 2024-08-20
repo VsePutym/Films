@@ -1,0 +1,22 @@
+.buttonInput {
+	padding: 10px 20px;
+	margin-left: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #ffcc00;
+	color: #333;
+	cursor: pointer;
+	font-weight: bold;
+	&:hover {
+		background-color: #e6b800;
+	}
+}
+
+input[type="text"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #444;
+	background-color: #333;
+	color: #fff;
+	width: 300px;
+}
